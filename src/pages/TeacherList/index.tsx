@@ -7,7 +7,7 @@ import TeacherItem from '../../componennts/TeacherItem';
 function TeacherList(){
     return (
         <div id="page-teacher-list" className="container">
-            <PageHeader title="Estes são os proffys disposineis.">
+            <PageHeader title="Estes são os proffys disponíveis.">
                 <form id="search-teachers">
                     <div className="input-block">
                         <label htmlFor="subject">Matérias</label>
