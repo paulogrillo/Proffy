@@ -3,26 +3,44 @@ import PageHeader from '../../componennts/PageHeader';
 import './styles.css';
 
 import TeacherItem from '../../componennts/TeacherItem';
+import Input from '../../componennts/Input';
+import Select from '../../componennts/Select';
 
 function TeacherList(){
     return (
         <div id="page-teacher-list" className="container">
             <PageHeader title="Estes são os proffys disponíveis.">
                 <form id="search-teachers">
-                    <div className="input-block">
-                        <label htmlFor="subject">Matérias</label>
-                        <input type="text" id="subject" />
-                    </div>
+                <Select 
+                name="subject" 
+                label="Matéria"
+                options={[
+                    { value: 'Typescript', label: 'Typescript'},
+                    { value: 'Python', label: 'Python'},
+                    { value: 'Java', label: 'Java'},
+                    { value: 'Kotlin', label: 'Kotlin'},
+                    { value: 'Javascript', label: 'Javascript'},
 
-                    <div className="input-block">
-                        <label htmlFor="week-day">Dia da semana</label>
-                        <input type="text" id="week-day" />
-                    </div>
+                ]}
+                
+                />
 
-                    <div className="input-block">
-                        <label htmlFor="time">Hora</label>
-                        <input type="text" id="time" />
-                    </div>
+                <Select 
+                name="week_day" 
+                label="Dia da semana"
+                options={[
+                    { value: '0', label: 'Domingo'},
+                    { value: '1', label: 'Segunda-feira'},
+                    { value: '2', label: 'Terça-feira'},
+                    { value: '3', label: 'Quarta-feira'},
+                    { value: '4', label: 'Quinta-feira'},
+                    { value: '5', label: 'Sexta-feira'},
+                    { value: '6', label: 'Sábado'},
+
+                ]}
+                
+                />
+                    <Input type="time" name="time" label="Hora" />
                 </form>
             </PageHeader>
 
