@@ -1,8 +1,6 @@
 # Proffy - Online study platform.
 
-<p align="center">
-  <h2><a href="https://proffy-rouge.vercel.app/">Proffy</a> </h2>
-<p>
+<h2 aling="center"><a href="https://proffy-rouge.vercel.app/">Proffy</a></h2>
 
 <p align="center">
   <h2> System design</h2>
